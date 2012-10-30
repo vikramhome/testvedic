@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/mainLayout"
+    android:background="@drawable/new1" >
+
+    <EditText
+        android:id="@+id/fno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:inputType="number"
+        android:hint="Enter First Number"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/sno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fno"
+        android:layout_below="@+id/fno"
+        android:layout_marginTop="50dp"
+        android:inputType="number"
+        android:hint="Enter Second Number"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/submit"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sno"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Submit" />
+
+   <!--  <TextView
+        android:id="@+id/rules"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textColor="#000000"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium" /> -->
+
+    <Button
+        android:id="@+id/next"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="60dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Next" /> 
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vedic.maths"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application
+        android:icon="@drawable/vedic"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity android:name="VedicMaths" android:screenOrientation="portrait"
+             android:theme="@android:style/Theme.Black.NoTitleBar"></activity>
+        <activity android:name="Rules" android:screenOrientation="portrait"
+             android:theme="@android:style/Theme.Black.NoTitleBar"></activity>
+        <activity android:name="ResultPage" android:screenOrientation="portrait"
+             android:theme="@android:style/Theme.Black.NoTitleBar"></activity>
+        <activity android:name="SelectOperation"  android:screenOrientation="portrait"
+             android:theme="@android:style/Theme.Black.NoTitleBar"></activity>
+        <activity android:name="SelectRule"  android:screenOrientation="portrait"
+             android:theme="@android:style/Theme.Black.NoTitleBar"></activity>
+    </application>
+
+</manifest>
